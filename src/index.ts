@@ -1,10 +1,4 @@
-type SubscriptionCallback<T> = (oldValue: T, newValue: T) => void;
-
-interface StorageItem<T> {
-  current: T;
-  subscribe(callback: SubscriptionCallback<T>): void;
-  unsubscribe(callback: SubscriptionCallback<T>): void;
-}
+import { StorageItem, SubscriptionCallback } from './types.js';
 
 interface LsRx {
   use<T>(key: string, initialValue: T): StorageItem<T>;
