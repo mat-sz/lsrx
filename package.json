@@ -1,6 +1,6 @@
 {
   "name": "lsrx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Local storage helper",
   "type": "module",
   "main": "lib/index.js",
